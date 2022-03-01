@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <!-- {# head #} -->
+    <head>
+        <!-- {# <script src="../sources/ajax.js"></script> #} -->
+        <title>exo_ajax_2</title>
+    </head>
+    <!-- {# body #} -->
+    <body>
+        <div id="mother">
+            <h3>This is the home page title</h3>
+            <ul>
+                <li>This is the first thing for the home page</li>
+                <li>The second thing shown on the second page</li>
+            </ul>
+        </div>
+        <div>
+            <select onchange="change(this.value)">
+                <option value=""></option>
+                <option value="1">First value</option>
+                <option value="2">Second value</option>
+            </select>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='ajax.js') }}"></script>
+        <!-- <script src="../static/ajax.js"></script> -->
+    </body>
+</html>
